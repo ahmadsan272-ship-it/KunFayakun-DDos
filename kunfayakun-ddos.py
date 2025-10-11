@@ -64,8 +64,8 @@ def print_red_centered_art():
     os.system("clear")
     art = '''
              ╔════════╗
-             ║╔═══════╝  
-             ║║
+             ║             ║
+             ║╔═══════╝
              ║║
              ║║
       ╔═╗    ║║
@@ -73,7 +73,8 @@ def print_red_centered_art():
 ╔╗         ║╔═╝
 ║╚═════════╝║
  ║         ║
-  ╚═══════╝
+ ╚╗      ╔╝ 
+   ╚═══════╝
 █'''   
     red_art = f"{Fore.GREEN}{art}{Style.RESET_ALL}"  # Set th text color to red
     print(red_art.center(80))  # Adjust the width (80 characters) to match your terminal size
