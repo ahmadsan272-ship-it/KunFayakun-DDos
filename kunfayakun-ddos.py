@@ -63,16 +63,16 @@ def ddos():
 def print_red_centered_art():
     os.system("clear")
     art = '''
-                 ╔════════╗
-                 ║╔═══════╝  
-                 ║║
-                 ║║
-                 ║║
-      ╔═╗      ║║
-      ╚═╝   ╔═╝║
-╔╗           ║╔═╝
+              ╔════════╗
+              ║╔═══════╝  
+              ║║
+              ║║
+              ║║
+      ╔═╗   ║║
+      ╚═╝ ╔═╝║
+╔╗         ║╔═╝
 ║╚═════════╝║
- ║            ║
+ ║         ║
   ╚═══════╝
 █'''   
     red_art = f"{Fore.GREEN}{art}{Style.RESET_ALL}"  # Set th text color to red
