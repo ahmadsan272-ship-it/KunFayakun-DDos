@@ -28,12 +28,12 @@ def ddos():
             continue;
         else:
             break;
-    print(f"performing Ddos on {trget} on PORT {port} using FAKE IP {fake} ")
+    print(f"performing Ddos on {target} on PORT {port} using FAKE IP {fake} ")
     print(Fore.YELLOW + Style.BRIGHT + "[INFO!]" + Fore.WHITE + " if the above information is incorrect,you can restart the script and again enter the details correctly!!")
    # print(Fore.YELLOW + Style.BRIGHT + "[INFO!]" + Fore.WHITE + " Press CTRL + C and press Enter to Exit!")
     #print(Style.BRIGHT + Fore.YELLOW + "[INFO!]" + Fore.WHITE + "Press CTRL + C and press enter to exit!!")
     time.sleep(4)
-    print(Fore.MAGENTA + Style.BRIGHT + "DDos starting in ~")
+    print(Fore.YELLOW + Style.BRIGHT + "DDos starting in ~")
     print("seconds : 3")
     time.sleep(1)
     print("seconds : 2")
@@ -96,7 +96,7 @@ def menu():
     print(Fore.WHITE + Style.BRIGHT + "—————————————————————————————————————————————————————————————————")
     print(Fore.YELLOW + Style.BRIGHT + "Silahkan ketik 1 untuk melanjutkan...")
     print(Fore.BLUE + Style.BRIGHT + "1. DDos a website.  [1]")
-    print(Fore.WHITE + Style.BRIGHT + "2. exit.           [2]")
+    print(Fore.WHITE + Style.BRIGHT + "2. exit.            [2]")
     print("Enter your options .. [e.g 1,2]") 
     global usr
     usr = input(Fore.YELLOW + Style.BRIGHT + "0======>> " )
