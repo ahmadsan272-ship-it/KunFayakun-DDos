@@ -96,8 +96,8 @@ def menu():
     print(Fore.BLUE + Style.BRIGHT + "1. DDos a website.  [1]")
     print(Fore.WHITE + Style.BRIGHT + "2. exit.            [2]")
     print("Enter your options .. [e.g 1,2]") 
-    print(Fore.YELLOW + Style.BRIGHT +╭───KunFay────⬣")
     global usr
+    print(Fore.YELLOW + "╭───KunFay────⬣")
     usr = input(Fore.YELLOW + Style.BRIGHT + "╰─> " )
     if usr == "1":
         ddos()
