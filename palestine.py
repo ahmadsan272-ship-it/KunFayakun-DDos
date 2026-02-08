@@ -91,12 +91,13 @@ if __name__ == "__main__":
 def menu():
    # print(Style.BRIGHT + Fore.YELLOW + "[INFO!]" Fore.WHITE + "Press CTRL  C and press enter to exit!!")
     print(Style.BRIGHT + Fore.YELLOW + "[INFO!]" + Fore.BLUE + "Press CTRL + C and press enter to exit!!")
-    print(Fore.WHITE + Style.BRIGHT + "—————————————————————————————————————————————————————————————————")
+    print(Fore.WHITE + Style.BRIGHT + "————————————————————————————————————————————————————————————————")
     print(Fore.YELLOW + Style.BRIGHT + "Silahkan ketik 1 untuk melanjutkan...")
     print(Fore.BLUE + Style.BRIGHT + "1. DDos a website.  [1]")
     print(Fore.WHITE + Style.BRIGHT + "2. exit.            [2]")
     print("Enter your options .. [e.g 1,2]") 
     global usr
+    print(Fore.YELLOW ╭───KunFay────⬣")
     usr = input(Fore.YELLOW + Style.BRIGHT + "0======>> " )
     if usr == "1":
         ddos()
