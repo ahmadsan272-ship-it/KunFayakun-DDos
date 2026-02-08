@@ -64,9 +64,17 @@ def ddos():
 def print_red_centered_art():
     os.system("clear")
     art = '''
-    
-        
-            
+               ╭─╮                         ╭╮ 
+               │ │ ╭─────╮             ││
+               │ │ │╭────│╮          ╭╯│
+     ╭─╮     │ │ │╰────────────╯╭╯
+     │ │      │ │ │                     ╭╯
+     │ │      │ │ ╰─────────────╯
+     │ │      │ │          ││   ╭─╮
+                │╭╯ ╭────╯│  ╰─╯
+                ││   │      ╭╯   
+                ╰╯  ╰────╯
+
 '''
     red_art = f"{Fore.YELLOW}{art}{Style.RESET_ALL}"  # Set th text color to yellow
     print(red_art.center(80))  # Adjust the width (80 characters) to match your terminal size
