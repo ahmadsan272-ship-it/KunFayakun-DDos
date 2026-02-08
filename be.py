@@ -3,7 +3,6 @@ import os
 import socket
 import threading
 import time
-import fade
 from colorama import Fore, Style
 def ddos():
     os.system("clear")
